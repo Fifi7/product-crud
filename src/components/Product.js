@@ -1,7 +1,8 @@
-// src/ProductManager.js
+
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addProduct, updateProduct, deleteProduct } from '../redux/productSlice';
+import { FaEdit, FaTrash, FaPlus } from 'react-icons/fa';
 
 
 function Product() {
@@ -61,15 +62,15 @@ function Product() {
         {editMode ? (
           <button onClick={handleUpdateProduct}>Update Product</button>
         ) : (
-          <button onClick={handleAddProduct}>Add Product</button>
+          <button onClick={handleAddProduct}><FaPlus /></button>
         )}
       </div>
       <ul>
         {products.map((product) => (
           <li key={product.id}>
             <strong>{product.name}</strong> - {product.description}
-            <button onClick={() => handleEdit(product)}>Edit</button>
-            <button onClick={() => handleDelete(product.id)}>Delete</button>
+            <button onClick={() => handleEdit(product)}><FaEdit /></button>
+            <button onClick={() => handleDelete(product.id)}><FaTrash /></button>
           </li>
         ))}
       </ul>
