@@ -20,7 +20,9 @@ You can be able to perform the CRUD operations on the product.
 **react-icons:** A popular library for including icons in React projects.
 
 ## Deployment:
-I deployed the project using Vercel. 
+I deployed the project using Vercel. You can try it out by clicking the below link. Have fun!
+
+https://hai-product-btr79q93p-fifi7s-projects.vercel.app
 
 
 
